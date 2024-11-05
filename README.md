@@ -1,1 +1,1 @@
-# labb-2
+Initial project setup for Lab 2
