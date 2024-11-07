@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react';
+import Home from './pages/Home';
+const App = () => {
+	return (
+		<div>
+			<Home />
+		</div>
+	);
+};
 
-const App = () =>{
-    return (
-        <h1>
-            Hello world! I am using React
-        </h1>
-    )
-}
-
-export default App
+export default App;
