@@ -1,0 +1,75 @@
+.contacts .content {
+    text-align: center;
+    margin-top: 8rem;
+    max-width: 500px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3rem;
+    flex-direction: row-reverse; 
+  
+}
+.contact-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: left;
+    background-color: #00040b; 
+    padding: 2rem; 
+    border-radius: 8px; 
+    box-shadow: var(--box-shadow); 
+    
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-group label {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #f30594;  
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 2px solid #333;
+    background-color: #00040b;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    color: #eee;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #f30594; 
+    background-color: #333;
+}
+
+.btn {
+    align-self: flex-start;
+    background-color: #7a0041;
+    color: #fff;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border: 2px solid #f30594;
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 5px;
+ 
+}
+
+.btn:hover {
+    background-color: #f30594; 
+}

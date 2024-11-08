@@ -1,0 +1,51 @@
+.services {
+    margin-bottom: 10rem; 
+}
+
+.services .content {
+    text-align: center;
+}
+
+.services .heading {
+    font-family: 'Inknut Antiqua';
+    font-size: 36px;
+    line-height: 36px;
+    color: #fff;
+    margin-bottom: 10rem;
+}
+
+.services .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.services .box {
+    background-color: #60708B;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: var 2px 2px 10px 4px rgba(198, 180, 180, 0.15);
+    width: calc(33.333% - 2rem);
+    min-width: 250px;
+}
+
+.services .box i {
+    font-size: 3rem;
+    color: #f30594;
+    margin-bottom: 1rem;
+}
+
+.services .box h3 {
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.services .box p {
+    font-size: 12px;
+    line-height: 26px;
+    color: #a4a3a3;
+}

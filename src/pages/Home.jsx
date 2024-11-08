@@ -1,39 +1,39 @@
 import React from 'react';
-import '../styles/Header.css';
+import { Link } from 'react-router-dom'; 
+import '../styles/Home.css';
+
 const Home = () => {
     return (
         <div>
-            <nav class="nav-bar" id="navbar">
-        <div class="content">
-            
-            <ul class="navigation" id="navigation">
-                <li class="link"><a href="#main">Main</a></li>
-                <li class="link"><a href="#services">Services</a></li>
-                <li class="link"><a href="#about">About</a></li>
-                <div class="site-logo">
-                <a href="#" class="logo-link" id="navlogo">DreamTrip</a>
-            </div>
-                <li class="link"><a href="#tours">Tours</a></li>
-                
-                <li class="link"><a href="#contacts">Contacts</a></li>
-                <li class="link"><a href="#login">Log in</a></li>
-                <li class="link"><button class="nav-btn" id="close-btn">Закрити</button></li>
-            </ul>
-            <div class="menu-icon" id="menu-icon">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
-    </nav>
+            <nav className="nav-bar" id="navbar">
+                <div className="content">
+                    <ul className="navigation" id="navigation">
+                        <li className="link"><Link to="/">Main</Link></li>
+                        <li className="link"><Link to="/services">Services</Link></li>
+                        <li className="link"><Link to="/about">About</Link></li>
+                        <div className="site-logo">
+                            <Link to="/" className="logo-link" id="navlogo">DreamTrip</Link>
+                        </div>
+                        <li className="link"><Link to="/tours">Tours</Link></li>
+                        <li className="link"><Link to="/contacts">Contacts</Link></li>
+                        <li className="link"><Link to="/login">Log in</Link></li>
+                        <li className="link"><button className="nav-btn" id="close-btn">Закрити</button></li>
+                    </ul>
+                    <div className="menu-icon" id="menu-icon">
+                        <i className="fas fa-bars"></i>
+                    </div>
+                </div>
+            </nav>
     
-    <header class="main" id="main">
-        <div class="content">
-            <h1>Travel without restrictions - your ideal trips are here</h1>
-            <h4>Book your dream trip</h4>
-            <div class="modal">
-                <a href="#contacts" class="btn-request"><span class="button-txt">Leave a request</span></a>
-            </div>
-        </div>
-    </header>
+            <header className="main" id="main">
+                <div className="content">
+                    <h1>Travel without restrictions - your ideal trips are here</h1>
+                    <h4>Book your dream trip</h4>
+                    <div className="modal">
+                        <Link to="/contacts" className="btn-request"><span className="button-txt">Leave a request</span></Link>
+                    </div>
+                </div>
+            </header>
         </div>
     );
 };
