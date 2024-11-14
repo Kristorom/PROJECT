@@ -18,7 +18,7 @@
 }
 
 .service-card {
-    background-color: #586073; 
+    background-color: #586073;
     padding: 30px;
     border-radius: 15px;
     width: 250px;
@@ -41,4 +41,59 @@
 .service-description {
     font-size: 0.9rem;
     color: #d1d1d1;
+}
+
+
+@media (max-width: 768px) {
+    .services-title {
+        font-size: 2rem;
+        margin-bottom: 60px;
+    }
+
+    .services-container {
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .service-card {
+        width: 200px;
+        padding: 25px;
+    }
+
+    .service-icon {
+        font-size: 2.5rem;
+    }
+
+    .service-title {
+        font-size: 1rem;
+    }
+
+    .service-description {
+        font-size: 0.85rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .services-title {
+        font-size: 1.5rem;
+        margin-bottom: 40px;
+    }
+
+    .service-card {
+        width: 180px;
+        padding: 20px;
+    }
+
+    .service-icon {
+        font-size: 2rem;
+    }
+
+    .service-title {
+        font-size: 1rem;
+    }
+
+    .service-description {
+        font-size: 0.8rem;
+    }
 }

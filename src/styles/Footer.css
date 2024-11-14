@@ -39,3 +39,21 @@
     font-size: 0.9em;
     color: #888888;
 }
+@media (max-width: 600px) {
+    .footer {
+        padding: 15px 0;
+    }
+
+    .footer-content h3 {
+        font-size: 1em;
+    }
+
+    .footer-content p,
+    .footer-content a {
+        font-size: 0.9em;
+    }
+
+    .footer-copyright {
+        font-size: 0.8em;
+    }
+}

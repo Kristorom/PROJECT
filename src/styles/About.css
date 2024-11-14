@@ -65,3 +65,23 @@
 .callback-form button:hover {
     background-color: #218838;
 }
+
+
+@media (max-width: 768px) {
+    .why-choose-section {
+        flex-direction: column;
+    }
+    
+    .why-image,
+    .why-text {
+        max-width: 100%;
+    }
+    
+    .why-text h2 {
+        font-size: 1.5rem;
+    }
+    
+    .callback-section {
+        padding: 10px;
+    }
+}
