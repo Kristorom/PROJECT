@@ -1,0 +1,41 @@
+.footer {
+    background-color: #00040B;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-content {
+    margin-bottom: 10px;
+}
+
+.footer-content h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.footer-content p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #cccccc;
+}
+
+.footer-content .phone-icon,
+.footer-content .email-icon {
+    margin-right: 5px;
+    color: #6d6d6d;
+}
+
+.footer a {
+    color: #cccccc;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-copyright {
+    font-size: 0.9em;
+    color: #888888;
+}

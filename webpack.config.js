@@ -7,6 +7,7 @@ module.exports = {
 	output: {
 		path: path.resolve(__dirname, './dist'),
 		filename: 'index_bundle.js',
+		assetModuleFilename: 'images/[hash][ext][query]', // Налаштування для зберігання зображень у папці images
 	},
 	target: 'web',
 	devServer: {
@@ -29,8 +30,12 @@ module.exports = {
 				use: 'babel-loader',
 			},
 			{
-				test: /\.css$/, // Додаємо обробку CSS
+				test: /\.css$/, // Обробка CSS
 				use: ['style-loader', 'css-loader'],
+			},
+			{
+				test: /\.(png|jpe?g|gif|svg)$/i, // Обробка зображень
+				type: 'asset/resource',
 			},
 		],
 	},

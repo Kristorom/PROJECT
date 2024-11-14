@@ -1,0 +1,30 @@
+
+.App {
+    scroll-behavior: smooth;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+    text-decoration: none;
+}
+main {
+    display: flex;
+    flex-direction: column;
+  
+}
+body{
+    background-color: #00040B;
+}
+section {
+    min-height: 100vh; 
+    
+
+    padding: 50px 20px;
+}
+
+#home, #services, #about, #tours, #contacts {
+    scroll-margin-top: 80px; 
+}

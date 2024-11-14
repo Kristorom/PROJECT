@@ -1,104 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Roboto:wght@300;400;500;700;900&display=swap');
+.header {
+    background-color: #00040B;
+    padding: 1rem 0;
+}
 
-* {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	font-family: 'Poppins', sans-serif;
-	list-style: none;
-	text-decoration: none;
-}
-body {
-	font-family: 'Poppins', sans-serif;
-	background-color: #00040b;
-	color: #eee;
-}
 .nav-bar {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	width: 100%;
-	background-color: transparent;
-	z-index: 1000;
-}
-.nav-bar .menu-icon {
-	display: none;
-	font-size: 24px;
-	cursor: pointer;
-	color: #fff;
-	order: 3;
-}
-.content {
-	max-width: 1300px;
-	margin: 0 auto;
-	justify-content: center;
-	align-items: center;
-	padding: 1.6rem 1rem;
+    display: flex;
+    justify-content: center;
 }
 
-.nav-bar .content {
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	gap: 2rem;
-}
-.nav-bar .site-logo {
-    padding: 0.5rem;
-    order: 1;
+.navigation {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
 }
 
-.nav-bar .site-logo .logo-link {
-	font-weight: 500;
-	font-size: 22px;
-	line-height: 22px;
-	text-transform: capitalize;
-	color: #fff;
-	border-top: 4px solid #fff;
-}
-.nav-bar .navigation {
-	list-style: none;
-	display: flex;
-	align-items: center;
-	gap: 1rem;
-	order: 2;
+.link {
+    margin: 0 1rem;
+    color: #fff;
 }
 
-h1,
-h2,
-h3,
-h4 {
-	font-family: 'Roboto', sans-serif;
-}
-.nav-bar .navigation .link a {
-	padding: 0.25rem 0.5rem;
-
-	font-size: 16px;
-	text-transform: capitalize;
-	color: #eee;
-	border-top: 1px solid transparent;
-	transition: all 0.6s;
+.link a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+  
 }
 
-.nav-bar .navigation .link:hover a {
-	color: #f30594;
-	border-bottom: 1px solid #fff;
-}
-.nav-btn {
-	display: none;
-	padding: 0.5rem 1rem;
-	background-color: #f30594;
-	color: #fff;
-	border: none;
-	cursor: pointer;
-	font-size: 16px;
-	text-transform: capitalize;
-	transition: all 0.3s ease-in-out;
-	margin-top: 1rem;
-	width: 100%;
-	text-align: center;
+.link a:hover {
+    color: #f30594;
 }
 
-.nav-btn.active {
-	display: block;
+.site-logo a{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: auto;
+    color: #fff;
+    border-top: 4px solid #fff;
 }

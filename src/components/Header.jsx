@@ -1,28 +1,27 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import '../styles/Header.css';
+import '../styles/Home.css';
+
 
 const Header = () => {
     return (
-        <div>
-            <nav className="nav-bar" id="navbar">
+        <header className="header">
+            <nav className="nav-bar">
                 <div className="content">
-                    <ul className="navigation" id="navigation">
+                    <ul className="navigation">
                         <li className="link"><Link to="/">Main</Link></li>
                         <li className="link"><Link to="/services">Services</Link></li>
                         <li className="link"><Link to="/about">About</Link></li>
-                        <div className="site-logo">
-                            <Link to="/" className="logo-link" id="navlogo">DreamTrip</Link>
-                        </div>
+                        <li className="site-logo"><Link to="/">DreamTrip</Link></li>
                         <li className="link"><Link to="/tours">Tours</Link></li>
                         <li className="link"><Link to="/contacts">Contacts</Link></li>
-                        <li className="link"><Link to="/login">Log in</Link></li>
-                        <li className="link"><button className="nav-btn" id="close-btn">Закрити</button></li>
+                        <li className="link"><Link to="/login">Log In</Link></li>
                     </ul>
-                    <div className="menu-icon" id="menu-icon">
-                        <i className="fas fa-bars"></i>
-                    </div>
                 </div>
             </nav>
-        </div>
+        </header>
+      
     );
 };
 
